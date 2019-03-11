@@ -1,0 +1,61 @@
+****************
+Project Overview
+****************
+
+Creating a new Sphinx Project
+=============================
+
+`Sphinx Quickstart <https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html>`_
+
+
+In Local Environment
+====================
+
+Setup web rtd
+-------------
+	
+   * uses github
+   * uses web rtd account
+   * uses sphinx
+
+
+Setup local rtd repo
+--------------------
+   
+   * `Mac Setup`_
+
+.. _Mac Setup: macsetup.html
+	
+
+Misc local (even smaller subheading)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   * `Sublime Package Management`_
+   * `Sphinx Setup`_
+   * `GitLab Runner Setup on Mac <https://docs.gitlab.com/runner/install/osx.html>`_
+     
+.. _Sublime Package Management: sublimepkgmgmt.html
+.. _Sphinx Setup: sphinxsetup.html
+
+
+Setup VM
+========
+
+See `VMware Setup`_ page
+
+.. _VMWare Setup: vmwaresetup.html
+
+
+Setup Lab Environments
+======================
+
+* uses a RTD vm
+* uses a gitlab vm
+* connect lab VMs
+* :ref:`labvm`
+
+:ref:`usingdocker`
+==================
+
+Special 
+========

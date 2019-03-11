@@ -1,0 +1,29 @@
+Local RTD Docs and Guides
+=====================================================
+
+`Installation docs <https://docs.readthedocs.io/en/latest/install.html>`_
+
+`More RST Sphinx Sublime Github help <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/>`_
+
+`rtd on CentOS`_ 
+
+.. _rtd on CentOS: https://codefarm.me/2016/05/12/how-to-install-read-the-docs-on-centos/
+
+Testing github version
+
+
+
+.. toctree::
+   :numbered:
+   :glob:
+
+   project.rst
+   vmwaresetup.rst
+   macsetup.rst
+   usingdocker.rst
+   sphinxsetup.rst
+   sublimepkgmgmt.rst
+   labvm.rst
+   *
+
+* :ref:`search`

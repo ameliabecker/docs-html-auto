@@ -1,0 +1,3 @@
+.. _vm2:
+
+h1	Lab VM Notes Post Clone

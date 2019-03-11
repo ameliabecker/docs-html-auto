@@ -1,0 +1,80 @@
+Macbook Setup
+=============
+
+RTD Online
+----------
+
+#. Github
+#. Download Sphinx
+#. RTD account
+
+https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html
+
+
+RTD Locally
+-----------
+
+
+Check versions/download these:
+
+* Python 3.6 
+* virtualenv
+* Git (version >=2.17.0)
+* Mercurial (only if you need to work with mercurial repositories)
+* Pip (version >1.5)
+* Redis
+* Elasticsearch?
+
+nav to readthedocs.org folder
+
+.. code-block:: python
+
+	CFLAGS=-I/usr/local/opt/libxml2/include/libxml2 \
+	LDFLAGS=-L/usr/local/opt/libxml2/lib \
+	pip install -r requirements.txt
+
+Clone the repository somewhere on your disk and enter to the repository:
+
+.. code-block:: none
+
+    git clone https://github.com/rtfd/readthedocs.org.git
+    cd readthedocs.org
+
+Create a virtual environment and activate it:
+
+.. code-block:: none
+
+    virtualenv venv
+    source venv/bin/activate
+
+
+Next, install the dependencies using pip (make sure you are inside of the virtual environment):
+
+:: 
+
+    pip install -r requirements.txt
+
+.. note:: This may take a while, so go grab a beverage.
+
+When it's done, build the database:
+
+``python manage.py migrate``
+
+
+Then create a superuser account for Django:
+
+``python manage.py createsuperuser``
+
+Now let's properly generate the static assets:
+
+``python manage.py collectstatic``
+
+Now you can optionally load a couple users and test projects:
+
+.. code-block:: python
+
+    python manage.py loaddata test_data
+    python manage.py runserver
+
+
+Visit http://127.0.0.1:8000/ in your browser to see how it looks; you can use the admin interface via http://127.0.0.1:8000/admin (logging in with the superuser account you just created).

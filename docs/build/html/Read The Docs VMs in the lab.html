@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Read The Docs VMs in the lab &mdash; Local RTD Docs and Guides 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Local RTD Docs and Guides
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="project.html">1. Project Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vmwaresetup.html">2. VM Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macsetup.html">3. Macbook Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usingdocker.html">4. Using Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sphinxsetup.html">5. Setting up Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sublimepkgmgmt.html">6. Sublime Package Management</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Local RTD Docs and Guides</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Read The Docs VMs in the lab</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Read The Docs VMs in the lab.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="read-the-docs-vms-in-the-lab">
+<span id="labvm"></span><h1>Read The Docs VMs in the lab<a class="headerlink" href="#read-the-docs-vms-in-the-lab" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>VPN or at HQ:
+ssh <a class="reference external" href="mailto:amelia&#46;becker&#37;&#52;&#48;ip&#46;ip&#46;ip&#46;ip">amelia<span>&#46;</span>becker<span>&#64;</span>ip<span>&#46;</span>ip<span>&#46;</span>ip<span>&#46;</span>ip</a></p>
+<p>10.11.12.13    rtd.ad.secunetics.com    VM    ” - Read the Docs VM (Template)
+- POC: Jared Polli
+- secadmin/biW$^%tG8aser”</p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Start with this one</p>
+<p>10.11.12.14    readthedocs.ad.secunetics.com    VM    ” - Read the Docs VM
+- POC: Jared Polli
+- secadmin/biW$^%tG8aser”</p>
+<p>10.11.12.15    narm-gitlab.ad.secunetics.com    VM</p>
+<p>To do:
+- look for rtd</p>
+<blockquote>
+<div><ul class="simple">
+<li>Python 3.6</li>
+<li>virtualenv</li>
+<li>Git (version &gt;=2.17.0)</li>
+<li>Pip (version &gt;1.5)</li>
+<li>Redis</li>
+<li>Elasticsearch?</li>
+</ul>
+</div></blockquote>
+<p>VM 10.11.12.14 Notes:
+–old gov’t standard baseline</p>
+<p>used “sudo su -” to get root access</p>
+<p><a href="#id3"><span class="problematic" id="id4">*</span></a>exit</p>
+<p>Can’t log in to 10.11.12.13</p>
+<p>10.11.12.15 (narm-gitlab) no git?</p>
+</div>
+<div class="section" id="the-plan">
+<h1>The plan<a class="headerlink" href="#the-plan" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>! Snapshot</li>
+<li><dl class="first docutils">
+<dt>install everything on 10.11.12.14</dt>
+<dd><ul class="first last">
+<li>Python 3.6</li>
+<li>git v2.17</li>
+<li>pip v 1.5</li>
+<li>virtualenv</li>
+<li>redis</li>
+<li>read the docs</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>! snap</li>
+<li>get gitlab</li>
+<li>connect to personal gitlab</li>
+</ul>
+</div>
+<div class="section" id="notes-10-11-12-14">
+<h1>Notes 10.11.12.14<a class="headerlink" href="#notes-10-11-12-14" title="Permalink to this headline">¶</a></h1>
+<p>close vm before taking snapshot</p>
+<div class="section" id="utitities">
+<h2>Utitities:<a class="headerlink" href="#utitities" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>subscription-manager</li>
+<li>sudo  -</li>
+<li>yum install vim -y</li>
+<li>yum install wget -y</li>
+<li># yum install tcl -y</li>
+</ul>
+</div>
+<div class="section" id="install-python3-on-rhel">
+<h2>Install Python3 on RHEL<a class="headerlink" href="#install-python3-on-rhel" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">become root</p>
+</li>
+<li><dl class="first docutils">
+<dt># subscription-manager (register, attach –auto) working</dt>
+<dd><ul class="first simple">
+<li>subscription-manager repos </li>
+</ul>
+<p class="last">–enable rhel-7-server-optional-rpms –enable rhel-server-rhscl-7-rpms</p>
+</dd>
+</dl>
+</li>
+<li><p class="first"># yum install &#64;development</p>
+</li>
+<li><p class="first"># yum install rh-python36</p>
+</li>
+<li><p class="first">exit root</p>
+</li>
+<li><p class="first">$ scl enable rh-python36 bash</p>
+</li>
+<li><p class="first">$ python3 -V</p>
+</li>
+</ul>
+<p>Python 3.6.3
+* $ python -V # python now points to Python 3
+Python 3.6.3
+* $ which python
+/opt/rh/rh-python36/root/usr/bin/python</p>
+<p>Also installed:
+* pip 9.0.1
+* virtualenv 15.1.0 (use “python3.6 -m virtualenv”)</p>
+</div>
+<div class="section" id="installing-git-2-17">
+<h2>Installing Git 2.17<a class="headerlink" href="#installing-git-2-17" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Since git is already installed…</p>
+<p>%for updating git to 2.18 <a class="reference external" href="https://tecadmin.net/install-git-on-centos-fedora/">https://tecadmin.net/install-git-on-centos-fedora/</a>
+# yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
+# yum install gcc perl-ExtUtils-MakeMaker</p>
+<p># cd /usr/src
+# git clone <a class="reference external" href="https://github.com/git/git">https://github.com/git/git</a>
+# cd git</p>
+<p># make prefix=/usr/local/git all
+# make prefix=/usr/local/git install
+# echo “export PATH=/usr/local/git/bin:$PATH” &gt;&gt; /etc/bashrc
+# source /etc/bashrc</p>
+</div></blockquote>
+</div>
+<div class="section" id="redis">
+<h2>Redis<a class="headerlink" href="#redis" title="Permalink to this headline">¶</a></h2>
+<p># cd /usr/src
+# git clone <a class="reference external" href="https://github.com/antirez/redis.git">https://github.com/antirez/redis.git</a>
+# cd redis</p>
+<p># make V=1
+# make test -s</p>
+<blockquote>
+<div></div></blockquote>
+</div>
+<div class="section" id="getting-read-the-docs-org">
+<h2>Getting Read The Docs.org<a class="headerlink" href="#getting-read-the-docs-org" title="Permalink to this headline">¶</a></h2>
+<p>$ sudo yum install python-devel libxml2-devel libxslt-devel</p>
+<p>$ sudo git clone <a class="reference external" href="https://github.com/rtfd/readthedocs.org.git">https://github.com/rtfd/readthedocs.org.git</a>
+cd readthedocs.org</p>
+</div>
+<div class="section" id="when-reopening-a-bash-session">
+<h2>When reopening a Bash session<a class="headerlink" href="#when-reopening-a-bash-session" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>$ scl enable rh-python36 bash</li>
+</ul>
+</div>
+</div>
+<div class="section" id="rtd-vm-template-10-11-12-13">
+<h1>RTD VM “Template” 10.11.12.13<a class="headerlink" href="#rtd-vm-template-10-11-12-13" title="Permalink to this headline">¶</a></h1>
+<p>installed vim</p>
+<p>downloaded readthedocs.org</p>
+</div>
+<div class="section" id="new-things-happened">
+<h1>NEW THINGS HAPPENED<a class="headerlink" href="#new-things-happened" title="Permalink to this headline">¶</a></h1>
+<p>post clone–see <a class="reference external" href="vm2.html">VM Part 2</a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Amelia Becker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

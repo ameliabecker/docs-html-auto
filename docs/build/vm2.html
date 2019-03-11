@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>11. Lab VM Notes Post Clone &mdash; Local RTD Docs and Guides 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="10. Understanding the Read The Docs Install" href="understandingrtdinstall.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Local RTD Docs and Guides
+          
+
+          
+            
+            <img src="_static/secunetics_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">1. Project Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vmwaresetup.html">2. VM Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macsetup.html">3. Macbook Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usingdocker.html">4. Using Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sphinxsetup.html">5. Setting up Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sublimepkgmgmt.html">6. Sublime Package Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labvm.html">7. Lab VM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Read The Docs VMs in the lab.html">8. Read The Docs VMs in the lab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="today.html">9. Today’s To Do’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="understandingrtdinstall.html">10. Understanding the Read The Docs Install</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">11. Lab VM Notes Post Clone</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-django-first-time">11.1. Setting up Django First Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">11.2. Managing the Server</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Local RTD Docs and Guides</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>11. Lab VM Notes Post Clone</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/vm2.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lab-vm-notes-post-clone">
+<span id="vm2"></span><h1>11. Lab VM Notes Post Clone<a class="headerlink" href="#lab-vm-notes-post-clone" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setting-up-django-first-time">
+<h2>11.1. Setting up Django First Time<a class="headerlink" href="#setting-up-django-first-time" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">django</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">this may be sketch</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">pip for user is from python3, pip root is python2.7. use pip …… –user</p>
+</div>
+<p>Setup Django:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python ./manage.py migrate
+$ python ./manage.py createsuperuser
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">using the tag “python” runs python 3.6</p>
+</div>
+<p>Make a “superuser” account</p>
+</div>
+<div class="section" id="id1">
+<h2>11.2. Managing the Server<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">navigate to /checkouts/readthedocs.org</p>
+</li>
+<li><dl class="first docutils">
+<dt>Manage the server:</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">runserver</span> <span class="mf">0.0</span><span class="o">.</span><span class="mf">0.0</span><span class="p">:</span><span class="mi">8000</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="understandingrtdinstall.html" class="btn btn-neutral" title="10. Understanding the Read The Docs Install" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Amelia Becker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

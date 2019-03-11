@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>10. Understanding the Read The Docs Install &mdash; Local RTD Docs and Guides 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="11. Lab VM Notes Post Clone" href="vm2.html" />
+    <link rel="prev" title="9. Today’s To Do’s" href="today.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Local RTD Docs and Guides
+          
+
+          
+            
+            <img src="_static/secunetics_logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project.html">1. Project Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vmwaresetup.html">2. VM Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macsetup.html">3. Macbook Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usingdocker.html">4. Using Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sphinxsetup.html">5. Setting up Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sublimepkgmgmt.html">6. Sublime Package Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="labvm.html">7. Lab VM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Read The Docs VMs in the lab.html">8. Read The Docs VMs in the lab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="today.html">9. Today’s To Do’s</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">10. Understanding the Read The Docs Install</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#customization-project">10.1. Customization (Project)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#customization-site-wide">10.2. Customization (site wide)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#new-local-settings">10.2.1. New Local Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-your-own-title-to-pages">10.2.2. Adding your own title to pages</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#files">10.3. Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#django">10.4. Django</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#django-with-aa">10.4.1. Django with AA?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vm2.html">11. Lab VM Notes Post Clone</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Local RTD Docs and Guides</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>10. Understanding the Read The Docs Install</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/understandingrtdinstall.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="understanding-the-read-the-docs-install">
+<h1>10. Understanding the Read The Docs Install<a class="headerlink" href="#understanding-the-read-the-docs-install" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://docs.readthedocs.io/en/stable/custom_installs/customization.html">on RTD.org</a></p>
+<div class="section" id="customization-project">
+<h2>10.1. Customization (Project)<a class="headerlink" href="#customization-project" title="Permalink to this headline">¶</a></h2>
+<p>eg:
+add to <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> in the project</p>
+<p>adds the Secunetics logo</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Adds Secunetics Logo to the theme</span>
+<span class="c1"># in project &quot;build/_static&quot; folder</span>
+
+<span class="n">html_logo</span> <span class="o">=</span> <span class="s1">&#39;secunetics_logo.png&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="customization-site-wide">
+<h2>10.2. Customization (site wide)<a class="headerlink" href="#customization-site-wide" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="new-local-settings">
+<h3>10.2.1. New Local Settings<a class="headerlink" href="#new-local-settings" title="Permalink to this headline">¶</a></h3>
+<p>find the <code class="docutils literal notranslate"><span class="pre">readthedocs/settings</span></code> directory and add file <code class="docutils literal notranslate"><span class="pre">local_settings.py</span></code>
+in <code class="docutils literal notranslate"><span class="pre">amelia.becker/checkouts/readthedocs.org/readthedocs/settings</span></code>
+<code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">local_settings.py</span></code></p>
+</div>
+<div class="section" id="adding-your-own-title-to-pages">
+<h3>10.2.2. Adding your own title to pages<a class="headerlink" href="#adding-your-own-title-to-pages" title="Permalink to this headline">¶</a></h3>
+<p>This requires 2 parts of setup. First, you need to add a custom <code class="docutils literal notranslate"><span class="pre">TEMPLATE_DIRS</span></code> setting that points at your template overrides. Then, in those template overrides you have to insert your logo where the normal RTD logo goes.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This works for any setting you wish to change.</p>
+</div>
+<p>Example <code class="docutils literal notranslate"><span class="pre">local_settings.py</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1"># Directory that the project lives in, aka ../..</span>
+<span class="n">SITE_ROOT</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="n">TEMPLATE_DIRS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">/var/custom_templates/&quot;</span> <span class="o">%</span> <span class="n">SITE_ROOT</span><span class="p">,</span> <span class="c1"># Your custom template directory, before the RTD one to override it.</span>
+    <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">/readthedocs/templates/&#39;</span> <span class="o">%</span> <span class="n">SITE_ROOT</span><span class="p">,</span> <span class="c1"># Default RTD template dir</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Example <code class="docutils literal notranslate"><span class="pre">base.html</span></code> in your template overrides:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="o">%</span> <span class="n">extends</span> <span class="s2">&quot;/home/docs/checkouts/readthedocs.org/readthedocs/templates/base.html&quot;</span> <span class="o">%</span><span class="p">}</span>
+<span class="p">{</span><span class="o">%</span> <span class="n">load</span> <span class="n">i18n</span> <span class="o">%</span><span class="p">}</span>
+
+<span class="p">{</span><span class="o">%</span> <span class="n">block</span> <span class="n">branding</span> <span class="o">%</span><span class="p">}{</span><span class="o">%</span> <span class="n">trans</span> <span class="s2">&quot;My sweet site&quot;</span> <span class="o">%</span><span class="p">}</span> <span class="p">{</span><span class="o">%</span> <span class="n">endblock</span> <span class="o">%</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="files">
+<h2>10.3. Files<a class="headerlink" href="#files" title="Permalink to this headline">¶</a></h2>
+<p>/readthedocs.org</p>
+<blockquote>
+<div>/media: added secuneticslogo.jpg</div></blockquote>
+</div>
+<div class="section" id="django">
+<h2>10.4. Django<a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="django-with-aa">
+<h3>10.4.1. Django with AA?<a class="headerlink" href="#django-with-aa" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="vm2.html" class="btn btn-neutral float-right" title="11. Lab VM Notes Post Clone" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="today.html" class="btn btn-neutral" title="9. Today’s To Do’s" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Amelia Becker
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
